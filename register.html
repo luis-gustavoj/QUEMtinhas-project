@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/register.css" />
+    <title>QUEMtinhas | Registre-se</title>
+  </head>
+  <body>
+    <div class="background">
+      <div id="modal"></div>
+      <div id="register-success">
+        <div id="text-h1">
+          <h1>Cadastro da ONG efetuado com sucesso!</h1>
+        </div>
+        <div class="inputButton">
+          <input type="button" value="Retornar" id="returnButton" />
+        </div>
+      </div>
+      <div class="card-container">
+        <h1>Registre sua ONG</h1>
+        <form method="POST" id="registerForm">
+          <div class="inputText">
+            <label for="name">
+              <p>Nome</p>
+            </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="inputText">
+            <label for="desc">
+              <p>Descrição</p>
+            </label>
+            <input type="text" name="desc" id="desc" />
+          </div>
+          <div class="inputText">
+            <label for="place">
+              <p>Local</p>
+            </label>
+            <input type="text" name="place" id="place" />
+          </div>
+          <div class="inputText">
+            <label for="daily-capacity">
+              <p>Capacidade diária</p>
+            </label>
+            <input type="text" name="dailyCapacity" id="dailyCapacity" />
+          </div>
+          <div class="inputButton">
+            <input type="button" value="Enviar" id="submitButton" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/javascript/insertOngs.js"></script>
+  </body>
+</html>

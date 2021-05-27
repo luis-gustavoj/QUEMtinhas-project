@@ -1,0 +1,122 @@
+#return-button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+#return-button-container:hover {
+  transform: translateX(5px);
+}
+
+#return-button-container > a {
+  height: 50px;
+  width: 50px;
+}
+
+#return-button-container > a > img {
+  width: 100%;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 150px;
+  background: var(--orange);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.orgs-display-container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 30px;
+  flex-grow: 1;
+  border-radius: 20px;
+  background: rgb(243, 243, 243);
+  overflow-y: scroll;
+}
+
+.orgs-display-container::-webkit-scrollbar {
+  display: none;
+}
+
+.org-container {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 238, 238);
+  width: 250px;
+  height: 250px;
+}
+
+.org-name-container {
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(177, 177, 177);
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  padding: 0 0 0 20px;
+}
+
+.org-name-label {
+  font-size: 1.1rem;
+}
+
+.org-name-text {
+  font-size: 1.2rem;
+}
+
+.org-information-container {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  padding: 15px 20px 0px 20px;
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+input {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.1);
+}
+
+input:hover {
+  background: var(--darker-orange);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.org-label {
+  font-size: 1.1rem;
+}
+
+.org-text {
+  font-size: 1rem;
+}

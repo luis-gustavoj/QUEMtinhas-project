@@ -1,0 +1,100 @@
+#modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  position: absolute;
+}
+
+.background {
+  background: url(../img/background-register.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+}
+
+.card-container > h1 {
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.inputText {
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.inputText > label {
+  font-size: 1.2rem;
+}
+
+.inputText > input {
+  padding: 0 0 0 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.inputButton {
+  margin: 25px 0 0 0;
+  width: 100%;
+}
+
+.inputButton > input {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background-color: var(--orange);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.inputButton > input:hover {
+  background-color: var(--darker-orange);
+  transition: 0.2s ease;
+}
+
+#register-success {
+  visibility: hidden;
+  width: 400px;
+  background: rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  margin: 0 auto 0 auto;
+  left: 0;
+  right: 0;
+}
+
+#register-success > #text-h1 {
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
