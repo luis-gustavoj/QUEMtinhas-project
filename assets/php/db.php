@@ -1,5 +1,4 @@
 <?php
-
     define('HOST','localhost');
     define('USER','root');
     define('PASSWORD','');
@@ -58,7 +57,7 @@
                         <p class='org-label'>Capacidide diária:</p>
                         <p class='org-text'>".$total."</p>
                         <form action='./iWant.php' method='POST'>
-                            <input type='submit' value='Quero comer!' class='iwant-button'/>
+                            <input type='submit' value='Quero comer!' class='iwant-button enabledInput'/>
                             <input style='display: none;' type='hidden' name='ident' id='ident' value=".$p->id."/>
                         </form>
                         </div>
@@ -68,6 +67,7 @@
             echo("
                 </main>
                 </div>
+                <script src='../javascript/getAllOngs.js'></script>
             ");
         }
 

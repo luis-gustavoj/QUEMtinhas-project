@@ -1,11 +1,23 @@
-document.getElementById("returnButton").addEventListener("click", () => {
-  location.href = "./index.html";
-});
+function checkFields () {
+  let fields = document.querySelectorAll('input');
+  let fieldChecker = true;
+  fields = Array.prototype.slice.call(fields);
+  fields.shift();
+  fields.pop();
+  
+  fields.forEach(field => {
+    if(field.value === ""){
+      field.style.borderStyle = "Solid";
+      field.style.borderWidth = "1px";
+      field.style.borderColor = "red";
+      fieldChecker = false;
+    }
+  });
 
-document
-  .getElementById("submitButton")
-  .addEventListener("click", SubmitFormData);
-
+  if(fieldChecker){
+    SubmitFormData();
+  }
+}
 function SubmitFormData() {
   var name = $("#name").val();
   var description = $("#desc").val();
@@ -26,3 +38,8 @@ function SubmitFormData() {
     }
   );
 }
+
+document.getElementById("submitButton").addEventListener("click", checkFields);
+document.getElementById("returnButton").addEventListener("click", () => {
+  location.href = "./index.html";
+});
